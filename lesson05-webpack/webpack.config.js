@@ -3,6 +3,18 @@ const webpack = require("webpack");
 const MiniCssExtractPlugin = require("mini-css-extract-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
+const devServer = {
+  port: 4000,
+  open: true,
+  disableHostCheck: true,
+  historyApiFallback: true,
+  overlay: true,
+  stats: 'minimal',
+  inline: true,
+  compress: true,
+  contentBase: '/'
+}
+
 const config = {
   entry: {
     bundle: "./src/index.js",
@@ -76,6 +88,7 @@ const config = {
       template: "src/index.html"
     }),
   ],
+  devServer,
 };
 
 module.exports = config;
