@@ -1,0 +1,16 @@
+{
+  "products": [
+    {
+      "id": 2,
+      "name": "Samsung",
+      "price": 500,
+      "status": true
+    },
+    {
+      "id": 3,
+      "name": "Oppo f1s",
+      "price": "2000",
+      "status": true
+    }
+  ]
+}
